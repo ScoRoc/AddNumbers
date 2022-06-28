@@ -138,7 +138,7 @@ export default function App() {
 
   // Components
 
-  const numberInputs = Object.entries(numberState).map(([key, val], i) => (
+  const numberInputs = Object.keys(numberState).map((key, i) => (
     <NumberInputs
       key={key}
       onXClick={() => handleXClick({ key })}
