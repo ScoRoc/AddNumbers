@@ -81,10 +81,10 @@ export default function NumberInputs({
           onKeyUp={handleKeyUp}
           placeholder={placeholder}
           style={{
-            outlineColor: isValidFormat ? 'black' : 'red',
             borderRadius: '5px',
             fontSize: '20px',
             marginRight: '10px',
+            outlineColor: isValidFormat ? 'black' : 'red',
             padding: '10px',
           }}
           value={value}
