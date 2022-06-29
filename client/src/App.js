@@ -60,9 +60,11 @@ function reducer(state, { payload = {}, type }) {
     case ACTION_TYPES.UPDATE:
       const { isValidFormat, newVal } = payload;
 
+      const numberInput = state[key];
+
       return {
         ...state,
-        [key]: { isValidFormat, value: newVal },
+        [key]: { ...numberInput, isValidFormat, value: newVal },
       };
 
     default:
